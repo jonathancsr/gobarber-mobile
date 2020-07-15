@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const SignOut: React.FC = () => {
+const SignUp: React.FC = () => {
   return (
     <>
       <Container />
@@ -10,4 +10,4 @@ const SignOut: React.FC = () => {
   );
 };
 
-export default SignOut;
+export default SignUp;
