@@ -44,13 +44,13 @@ const SignUp: React.FC = () => {
               }}
             >
               <Input
-                autoCorrect={false}
-                autoCapitalize="none"
+                autoCapitalize="words"
                 name="name"
                 icon="user"
                 placeholder="Nome"
               />
               <Input
+                keyboardType="email-address"
                 autoCorrect={false}
                 autoCapitalize="none"
                 name="email"
@@ -58,8 +58,7 @@ const SignUp: React.FC = () => {
                 placeholder="E-mail"
               />
               <Input
-                autoCorrect={false}
-                autoCapitalize="none"
+                secureTextEntry
                 name="password"
                 icon="lock"
                 placeholder="Senha"
