@@ -43,17 +43,35 @@ const SignUp: React.FC = () => {
                 console.log(data);
               }}
             >
-              <Input name="name" icon="user" placeholder="Nome" />
-              <Input name="email" icon="mail" placeholder="E-mail" />
-              <Input name="password" icon="lock" placeholder="Senha" />
-              <Button
-                onPress={() => {
-                  formRef.current?.submitForm();
-                }}
-              >
-                Entrar
-              </Button>
+              <Input
+                autoCorrect={false}
+                autoCapitalize="none"
+                name="name"
+                icon="user"
+                placeholder="Nome"
+              />
+              <Input
+                autoCorrect={false}
+                autoCapitalize="none"
+                name="email"
+                icon="mail"
+                placeholder="E-mail"
+              />
+              <Input
+                autoCorrect={false}
+                autoCapitalize="none"
+                name="password"
+                icon="lock"
+                placeholder="Senha"
+              />
             </Form>
+            <Button
+              onPress={() => {
+                formRef.current?.submitForm();
+              }}
+            >
+              Entrar
+            </Button>
           </Container>
         </ScrollView>
       </KeyboardAvoidingView>
