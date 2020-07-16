@@ -62,6 +62,7 @@ const SignUp: React.FC = () => {
                 name="password"
                 icon="lock"
                 placeholder="Senha"
+                textContentType="newPassword"
               />
             </Form>
             <Button
